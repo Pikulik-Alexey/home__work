@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 .wrap {
     max-width: 1160px;
     padding: 0 10px;
@@ -29,6 +33,12 @@
     gap: 41px;
 }
 
+.header__search {
+    border: none;
+    background-color: #222222;
+    cursor: pointer;
+}
+
 .header__right {
     display: flex;
     align-items: center;
@@ -37,7 +47,7 @@
     padding-bottom: 20px;
 }
 
-.header__btn {
+.header__burg {
     background-color: #222222;
     border: none;
     cursor: pointer;
@@ -56,19 +66,28 @@
     height: 100%;
     background-image: url(../img/man.png);
     background-repeat: no-repeat;
-    background-position: -218px;
+    background-position-x: -218px;
+    background-position-y: bottom;
 }
 
 .promo__title{
-    max-width: 405px;
+    font-weight: 900;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 40px;
     color: #222222;
     padding-left: 16px;
     border-left: 12px solid#F16D7F;
+    margin-right: 90px;
 }
 
-.promo__decor{
+.promo__title--small {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.promo__title--decor{
     color: #F16D7F;
 }
 
@@ -79,22 +98,23 @@
 .category__flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 30px;
 }
 
 .category__women {
-   background-image: url(../img/women.jpg);
-   width: 31%;
-   height: 260px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    background-color: #C4C4C4;
+    background-image: url(../img/women.jpg);
+    max-width: 360px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .category__men {
+    background-color: #C4C4C4;
     background-image: url(../img/men.jpg);
-    width: 31%;
+    max-width: 360px;
     height: 260px;
     display: flex;
     justify-content: center;
@@ -102,8 +122,9 @@
 }
 
 .category__kids {
+    background-color: #C4C4C4;
     background-image: url(../img/kids.jpg);
-    width: 31%;
+    max-width: 360px;
     height: 260px;
     display: flex;
     justify-content: center;
@@ -111,6 +132,7 @@
 }
 
 .category__accessories {
+    background-color: #C4C4C4;
     background-image: url(../img/acces.jpg);
     width: 100%;
     height: 180px;
@@ -119,16 +141,19 @@
     align-items: center;
 }
 
-.category__decor {
-    font-size: 24px;
-    line-height: 28px;
-    color: #F16D7F;
-}
-
 .category__text {
     line-height: 19px;
     font-size: 16px;
     color: #FFFFFF;
+    text-align: center;
+}
+
+.category__decor {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F16D7F;
+    text-align: center;
 }
 
 
@@ -139,6 +164,20 @@
 .cards__flex {
     justify-content: center;
     align-items: center;
+}
+
+.cards__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
+.cards__title--small {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
 }
 
 .cards__btn {
@@ -170,6 +209,33 @@
 
 .card {
     max-width: 360px;
+    background-color: #F8F8F8;
+}
+
+.card__text h3 {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding-left: 18px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+.card__text p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-left: 16px;
+    padding-bottom: 18px;
+    max-width: 315px;
+}
+
+.card__text .price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    padding-left: 18px;
+    padding-bottom: 20px;
 }
 
 .advantages {
