@@ -273,11 +273,27 @@ body {
 .advantages__flex {
     display: flex; 
     text-align: center;
+    justify-content: space-around;
 }
 
 .advantages__item {
     max-width: 360px;
     padding-top: 103px;
+}
+
+.advantages__item h3 {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    padding-top: 28px;
+    padding-bottom: 16px;
+}
+
+.advantages__item p {
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
     padding-bottom: 104px;
 }
 
@@ -319,6 +335,57 @@ body {
 
 .feedback__text--italic {
     font-style: italic;
+}
+
+.feedback__right h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224
+}
+
+.feedback__right--small {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #222224;
+}
+
+.feedback__unification {
+    display: flex;
+    padding-top: 22px;
+}
+
+.feedback__field {
+    padding: 15px 55px;
+    background-color: #E1E1E1;
+    border: none;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    outline: none;
+}
+
+.feedback__field::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67; 
+}
+
+.feedback__btn {
+    background-color: #F16D7F;
+    padding: 15px 20px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 
