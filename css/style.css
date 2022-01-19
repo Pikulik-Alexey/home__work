@@ -33,10 +33,18 @@ body {
     gap: 41px;
 }
 
+.header__logo:hover {
+    opacity: 0.7;
+}
+
 .header__search {
     border: none;
     background-color: #222222;
     cursor: pointer;
+}
+
+.header__search:hover {
+    opacity: 0.7;
 }
 
 .header__right {
@@ -51,6 +59,18 @@ body {
     background-color: #222222;
     border: none;
     cursor: pointer;
+}
+
+.header__burg:hover {
+    opacity: 0.7;
+}
+
+.header__register:hover {
+    opacity: 0.7;
+}
+
+.header__cart:hover {
+    opacity: 0.7;
 }
 
 .promo {
@@ -270,12 +290,22 @@ body {
 .feedback {
     background-color: #D73C3C;
     background-image: url(../img/fon_feedback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 80px;
 }
 
 .feedback__flex {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.feedback__img {
+    padding-top: 86px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .feedback__text {
@@ -284,6 +314,7 @@ body {
     text-align: center;
     color: #222224;
     max-width: 360px;
+    padding-bottom: 126px;
 }
 
 .feedback__text--italic {
@@ -293,5 +324,37 @@ body {
 
 .footer {
     background-color: #222222;
+}
+
+.footer__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__left {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer__network {
+    display: flex;
+    list-style-type: none;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.footer__network:hover {
+    background-color: #F16D7F;
     color: #FFFFFF;
 }
+
+.footer__bg {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+}
+

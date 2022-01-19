@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
@@ -24,7 +25,7 @@
                     <img src="img/poisk.svg" alt="search">
                 </button>
             </section>
-            <section class="header__right">
+            <nav class="header__right">
                 <button class="header__burg">
                     <img src="img/burg.svg" alt="burger">
                 </button>
@@ -34,7 +35,7 @@
                 <a class="header__cart" href="#">
                     <img src="img/cart.svg" alt="cart">
                 </a>
-            </section>
+            </nav>
         </div>
     </header>
     <main>
@@ -165,22 +166,44 @@
     <section class="feedback">
         <div class="wrap feedback__flex">
             <section class="feedback__left">
-
-                <img src="img/face.png" alt="">
-
-
-                <p class="feedback__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="feedback__text--italic">a pulvinar purus condimentum</span>“</p>
-
+                <div class="feedback__img">
+                    <img src="img/face.png" alt="">
+                </div>
+                <p class="feedback__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                        class="feedback__text--italic">a pulvinar purus condimentum</span>“</p>
             </section>
             <section class="feedback__right">
                 <h3>SUBSCRIBE
-                    FOR OUR NEWLETTER AND PROMOTION</h3>
+                    <span>FOR OUR NEWLETTER AND PROMOTION</span>
+                </h3>
             </section>
         </div>
     </section>
     <footer class="footer">
         <div class="wrap footer__flex">
-            подвал
+            <section class="footer__left">
+                <p>&copy;&nbsp;2021 Brand All Rights Reserved.</p>
+            </section>
+            <nav class="footer__right">
+                <ul class="footer__network">
+                    <li class="footer__bg">
+                        <link rel="stylesheet" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li class="footer__bg">
+                        <link rel="stylesheet" href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </li>
+                    <li class="footer__bg">
+                        <link rel="stylesheet" href="#">
+                        <i class="fab fa-pinterest-p"></i>
+                    </li>
+                    <li class="footer__bg">
+                        <link rel="stylesheet" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>
