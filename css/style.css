@@ -385,6 +385,7 @@ body {
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -398,7 +399,7 @@ body {
     justify-content: space-between;
 }
 
-.footer__left {
+.footer__copyright {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 16px;
@@ -410,17 +411,23 @@ body {
     display: flex;
     list-style-type: none;
     gap: 7px;
+    padding: 0;
     cursor: pointer;
 }
 
-.footer__network:hover {
-    background-color: #F16D7F;
-    color: #FFFFFF;
-}
-
-.footer__bg {
+.footer__link {
+    color: #000000;
     width: 32px;
     height: 32px;
     background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
 }
 
