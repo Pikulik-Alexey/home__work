@@ -268,8 +268,28 @@ body {
 
 
 .feedback {
-    
+    background-color: #D73C3C;
+    background-image: url(../img/fon_feedback.jpg);
 }
+
+.feedback__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feedback__text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    max-width: 360px;
+}
+
+.feedback__text--italic {
+    font-style: italic;
+}
+
 
 .footer {
     background-color: #222222;
