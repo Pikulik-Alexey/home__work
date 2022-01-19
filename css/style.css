@@ -308,8 +308,9 @@ body {
     background-image: url(../img/fon_feedback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: center;
-    background-position-x: 80px;
+    padding-top: 100px;
+    padding-bottom: 155px;
+    background-position: left bottom;
 }
 
 .feedback__flex {
@@ -319,7 +320,6 @@ body {
 }
 
 .feedback__img {
-    padding-top: 86px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -330,7 +330,6 @@ body {
     text-align: center;
     color: #222224;
     max-width: 360px;
-    padding-bottom: 126px;
 }
 
 .feedback__text--italic {
