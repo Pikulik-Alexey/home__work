@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
 }
 
@@ -269,7 +270,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
 }
 
 .cards__test {
@@ -281,6 +281,7 @@ body {
     background-color: #FFFFFF;
     cursor: pointer;
     opacity: 0.7;
+    text-decoration: none;
 }
 
 .cards__test:hover {
