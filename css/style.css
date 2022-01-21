@@ -73,6 +73,51 @@ body {
     opacity: 0.7;
 }
 
+.benefits {
+    background-color: #F8F3F4;
+}
+
+.benefits__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits__title {
+    padding-top: 59px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.benefits__link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-decoration: none;
+}
+
+.benefits__test::before {
+    content: " / ";
+}
+
+.benefits__test::after {
+    content: " / ";
+}
+
+.benefits__link:hover {
+    opacity: 0.7;
+}
+
+.benefits__link--decor {
+    color: #F16D7F;
+}
+
 .promo {
     background-color: #F1E4E6;
     height: 764px;
