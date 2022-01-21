@@ -75,6 +75,7 @@ body {
 
 .benefits {
     background-color: #F8F3F4;
+    margin-bottom: 51px;
 }
 
 .benefits__flex {
@@ -95,26 +96,26 @@ body {
     display: flex;
 }
 
-.benefits__link {
+.breadcrumbs__link {
     font-size: 14px;
     line-height: 17px;
     color: #636363;
     text-decoration: none;
 }
 
-.benefits__test::before {
+.breadcrumbs__test::before {
     content: " / ";
 }
 
-.benefits__test::after {
+.breadcrumbs__test::after {
     content: " / ";
 }
 
-.benefits__link:hover {
+.breadcrumbs__link:hover {
     opacity: 0.7;
 }
 
-.benefits__link--decor {
+.breadcrumbs__link--decor {
     color: #F16D7F;
 }
 
