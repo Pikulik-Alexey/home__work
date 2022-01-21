@@ -79,7 +79,7 @@ body {
     margin-bottom: 65px;
 }
 
-.promo__flex{
+.promo__flex {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -90,7 +90,7 @@ body {
     background-position-y: bottom;
 }
 
-.promo__title{
+.promo__title {
     font-weight: 900;
     font-size: 48px;
     line-height: 40px;
@@ -107,7 +107,7 @@ body {
     color: #222222;
 }
 
-.promo__title--decor{
+.promo__title--decor {
     color: #F16D7F;
 }
 
@@ -178,7 +178,7 @@ body {
 
 
 .cards {
-   margin-bottom: 96px;
+    margin-bottom: 96px;
 }
 
 .cards__flex {
@@ -214,7 +214,7 @@ body {
     padding: 14px 38px;
     border: 1px solid #FF6A6A;
     background-color: #FFFFFF;
-    cursor: pointer; 
+    cursor: pointer;
     opacity: 0.7;
 }
 
@@ -266,12 +266,53 @@ body {
     padding-bottom: 20px;
 }
 
+.navigation {
+    margin-bottom: 96px;
+}
+
+.navigation__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    width: 283px;
+}
+
+.pagination__item {
+    padding: 12px 0;
+}
+
+.pagination__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+}
+
+.pagination__item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.pagination__item:nth-child(7) {
+    margin-right: 0;
+}
+
+.pagination__link--decor {
+    color: #EF5B70;
+}
+
 .advantages {
     background-color: #222224;
 }
 
 .advantages__flex {
-    display: flex; 
+    display: flex;
     text-align: center;
     justify-content: space-around;
 }
@@ -360,8 +401,8 @@ body {
     padding: 15px 55px;
     background-color: #E1E1E1;
     border: none;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     outline: none;
 }
 
@@ -371,7 +412,7 @@ body {
     display: flex;
     align-items: center;
     color: #222224;
-    opacity: 0.67; 
+    opacity: 0.67;
 }
 
 .feedback__btn {
@@ -430,4 +471,3 @@ body {
     background-color: #F16D7F;
     color: #FFFFFF;
 }
-
