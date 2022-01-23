@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <title>Main page</title>
 </head>
 
 <body>
@@ -41,32 +41,39 @@
     <main class="main">
         <section class="promo">
             <div class="wrap promo__flex">
-                <h1 class="promo__title">THE BRAND <br> <span class="promo__title--small">OF LUXERIOUS <span
-                            class="promo__title--decor">FASHION</span></span></h1>
+                <div class="promo__title">
+                    <h1>THE BRAND <br> <span class="promo__title--small">OF LUXERIOUS <span
+                                class="promo__title--decor">FASHION</span></span></h1>
+                </div>
             </div>
         </section>
         <section class="category">
             <div class="wrap category__flex">
                 <h2 class="visualy__hidden">карточки товаров</h2>
-                <article class="category__women">
-                    <p class="category__text">30% OFF <br> <span class="category__decor">FOR WOMEN</span></p>
+                <article class="categories__item categories__item--women">
+                    <p class="categories__sales">30% OFF</p>
+                    <p class="categories__name">FOR WOMEN</p>
                 </article>
-                <article class="category__men">
-                    <p class="category__text">HOT DEAL <br> <span class="category__decor">FOR MEN</span></p>
+                <article class="categories__item categories__item--men">
+                    <p class="categories__sales">HOT DEAL</p>
+                    <p class="categories__name">FOR MEN</p>
                 </article>
-                <article class="category__kids">
-                    <p class="category__text">NEW ARRIVALS <br> <span class="category__decor">FOR KIDS</span></p>
+                <article class="categories__item categories__item--kids">
+                    <p class="categories__sales">NEW ARRIVALS</p>
+                    <p class="categories__name">FOR KIDS</p>
                 </article>
-                <article class="category__accessories">
-                    <p class="category__text">LUXIROUS & TRENDY <br> <span class="category__decor">ACCESORIES</span>
-                    </p>
+                <article class="categories__item categories__item--accessories">
+                    <p class="categories__sales">LUXIROUS & TRENDY</p>
+                    <p class="categories__name">ACCESORIES</p>
                 </article>
             </div>
         </section>
-        <section class="cards">
-            <div class="wrap cards__flex ">
-                <h2 class="cards__title">Fetured Items</h2>
-                <p class="cards__title--small">Shop for items based on what we featured in this week</p>
+        <section class="products">
+            <div class="wrap products__flex">
+                <div class="products__text">
+                    <h2>Fetured Items</h2>
+                    <p>Shop for items based on what we featured in this week</p>
+                </div>
                 <div class="container">
                     <section class="card">
                         <article class="card__img">
@@ -135,8 +142,8 @@
                         </article>
                     </section>
                 </div>
-                <div class="cards__btn">
-                    <a class="cards__test" href="catalog.html" role="button">Browse All Product</a>
+                <div class="products__item">
+                    <a class="products__link" href="catalog.html" role="button">Browse All Product</a>
                 </div>
             </div>
         </section>
@@ -144,23 +151,23 @@
     <section class="advantages">
         <div class="wrap advantages__flex">
             <h2 class="visualy__hidden">преимущества</h2>
-            <article class="advantages__item">
-                <img src="img/delivery.svg" alt="">
+            <article class="advantages__item advantages__item--delivery">
                 <h3>Free Delivery</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                </p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive
+                    models.</p>
             </article>
-            <article class="advantages__item">
-                <img src="img/discount.svg" alt="">
+            <article class="advantages__item advantages__item--discount">
                 <h3>Sales & discounts</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                </p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive
+                    models.</p>
             </article>
-            <article class="advantages__item">
-                <img src="img/warranty.svg" alt="">
+            <article class="advantages__item advantages__item--warranty">
                 <h3>Quality assurance</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                </p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive
+                    models.</p>
             </article>
         </div>
     </section>
@@ -171,13 +178,17 @@
                 <div class="feedback__img">
                     <img src="img/face.png" alt="">
                 </div>
-                <p class="feedback__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
-                        class="feedback__text--italic">a pulvinar purus condimentum</span>“</p>
+                <div class="feedback__text">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="feedback__text--italic">a
+                            pulvinar purus condimentum</span>“</p>
+                </div>
             </section>
             <section class="feedback__right">
-                <h3>SUBSCRIBE <br>
-                    <span class="feedback__right--small">FOR OUR NEWLETTER AND PROMOTION</span>
-                </h3>
+                <div>
+                    <h3>SUBSCRIBE <br>
+                        <span class="feedback__right--small">FOR OUR NEWLETTER AND PROMOTION</span>
+                    </h3>
+                </div>
                 <form action="#" class="feedback__unification">
                     <input class="feedback__field" type="email" required placeholder="Enter Your Email" minlength="4"
                         maxlength="30">
@@ -188,7 +199,9 @@
     </section>
     <footer class="footer">
         <div class="wrap footer__flex">
-            <p class="footer__copyright">&copy;&nbsp;2021 Brand All Rights Reserved.</p>
+            <div class="footer__copyright">
+                <p>&copy;&nbsp;2021 Brand All Rights Reserved.</p>
+            </div>
             <ul class="footer__network">
                 <li class="footer__item">
                     <a href="#" target="_blank" class="footer__link">

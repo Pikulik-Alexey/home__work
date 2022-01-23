@@ -50,7 +50,11 @@ body {
     align-items: center;
     padding-top: 18px;
     padding-bottom: 19px;
-    gap: 41px;
+}
+
+.header__logo {
+    margin-right: 41px;
+    text-decoration: none;
 }
 
 .header__logo:hover {
@@ -59,7 +63,7 @@ body {
 
 .header__search {
     border: none;
-    background-color: #222222;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -76,7 +80,7 @@ body {
 }
 
 .header__burg {
-    background-color: #222222;
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
@@ -113,6 +117,51 @@ body {
 }
 
 .breadcrumbs {
+	padding: 20px;
+	background-color: #f7d9d9;
+}
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.breadcrumbs-item::before {
+  content: '/';
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:first-child::before {
+  display: none;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  transition: 0.2s;
+}
+
+.breadcrumbs-link--current {
+  font-weight: bold;
+  color: #F16D7F;
+}
+
+.breadcrumbs-link[href]:hover {
+  text-decoration: underline;
+  color: #F16D7F;
+}
+
+
+
+
+
+.breadcrumbs {
     display: flex;
 }
 
@@ -141,15 +190,13 @@ body {
 
 .promo {
     background-color: #F1E4E6;
-    height: 764px;
-    margin-bottom: 65px;
 }
 
 .promo__flex {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 100%;
+    height: 764px;
     background-image: url(../img/man.png);
     background-repeat: no-repeat;
     background-position-x: -218px;
@@ -157,13 +204,17 @@ body {
 }
 
 .promo__title {
+    max-width: 405px;
+    margin-right: 90px;
+}
+
+.promo__title h1 {
     font-weight: 900;
     font-size: 48px;
     line-height: 40px;
     color: #222222;
     padding-left: 16px;
     border-left: 12px solid#F16D7F;
-    margin-right: 90px;
 }
 
 .promo__title--small {
@@ -178,6 +229,7 @@ body {
 }
 
 .category {
+    padding-top: 65px;
     margin-bottom: 96px;
 }
 
@@ -187,92 +239,85 @@ body {
     gap: 30px;
 }
 
-.category__women {
+.categories__item {
     background-color: #C4C4C4;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories__item--women {
     background-image: url(../img/women.jpg);
-    width: 360px;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.category__men {
-    background-color: #C4C4C4;
+.categories__item--men {
     background-image: url(../img/men.jpg);
-    width: 360px;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.category__kids {
-    background-color: #C4C4C4;
+.categories__item--kids {
     background-image: url(../img/kids.jpg);
-    width: 360px;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.category__accessories {
-    background-color: #C4C4C4;
+.categories__item--accessories {
     background-image: url(../img/acces.jpg);
     width: 100%;
     height: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.category__text {
+.categories__sales {
     line-height: 19px;
     font-size: 16px;
     color: #FFFFFF;
-    text-align: center;
 }
 
-.category__decor {
+.categories__name {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     color: #F16D7F;
-    text-align: center;
 }
 
-
-.cards {
+.products {
     margin-bottom: 96px;
 }
 
-.cards__flex {
+.products__flex {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.cards__title {
+.products__text {
+    margin-bottom: 48px;
+}
+
+.products__text h2 {
     font-size: 30px;
     line-height: 36px;
     color: #222222;
     text-align: center;
+    padding-bottom: 6px;
 }
 
-.cards__title--small {
+.products__text p {
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
     text-align: center;
 }
 
-.cards__btn {
+.products__item {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 48px;
 }
 
-.cards__test {
+.products__link {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
@@ -284,7 +329,7 @@ body {
     text-decoration: none;
 }
 
-.cards__test:hover {
+.products__link:hover {
     background-color: #F16D7F;
     border: 1px solid #FF6A6A;
     color: #FFFFFF;
@@ -292,13 +337,11 @@ body {
 
 
 .container {
-    max-width: 1160px;
+    max-width: 1140px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 48px;
-    margin-bottom: 48px;
 }
 
 .card {
@@ -332,7 +375,20 @@ body {
     padding-bottom: 20px;
 }
 
+.goods {
+    margin-top: 64px;
+
+}
+
+.goods__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .navigation {
+    padding-top: 48px;
     margin-bottom: 96px;
 }
 
@@ -379,18 +435,40 @@ body {
 
 .advantages__flex {
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: space-around;
 }
 
 .advantages__item {
     max-width: 360px;
-    padding-top: 103px;
+    padding-top: 163px;
+}
+
+.advantages__item--delivery {
+    background-image: url(../img/delivery.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 130px;
+}
+
+.advantages__item--discount {
+    background-image: url(../img/discount.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 126px;
+}
+
+.advantages__item--warranty {
+    background-image: url(../img/warranty.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 130px;
 }
 
 .advantages__item h3 {
-    font-size: 19.96px;
+    font-size: 20px;
     line-height: 24px;
+    text-align: center;
     color: #FBFBFB;
     padding-top: 28px;
     padding-bottom: 16px;
@@ -402,13 +480,10 @@ body {
     text-align: center;
     color: #FBFBFB;
     padding-bottom: 104px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 25px;
 }
-
-
-
-
-
-
 
 .feedback {
     background-color: #D73C3C;
