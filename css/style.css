@@ -557,7 +557,11 @@ body {
     color: #FBFBFB;
 }
 
-.footer__network {
+.network {
+  
+}
+
+.network__list {
     display: flex;
     list-style-type: none;
     gap: 7px;
@@ -565,7 +569,7 @@ body {
     cursor: pointer;
 }
 
-.footer__link {
+.network__link {
     color: #000000;
     width: 32px;
     height: 32px;
@@ -576,7 +580,7 @@ body {
     text-decoration: none;
 }
 
-.footer__link:hover {
+.network__link:hover {
     background-color: #F16D7F;
     color: #FFFFFF;
 }
