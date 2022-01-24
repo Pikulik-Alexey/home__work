@@ -116,45 +116,42 @@ body {
     color: #F16D7F;
 }
 
-.breadcrumbs {
-
-}
 
 .breadcrumbs__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
 }
 
 .breadcrumbs__item::before {
-  content: '/';
-  margin-right: 5px;
+    content: '/';
+    margin-right: 5px;
 }
 
 .breadcrumbs__item:first-child::before {
-  display: none;
+    display: none;
 }
 
 .breadcrumbs__link {
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #636363;
-  /* transition: 0.2s; */
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    /* transition: 0.2s; */
 }
 
 .breadcrumbs__link--current {
-  font-weight: bold;
-  color: #F16D7F;
+    font-weight: bold;
+    color: #F16D7F;
 }
 
 .breadcrumbs__link[href]:hover {
-  /* text-decoration: underline;
+    /* text-decoration: underline;
   color: #F16D7F; */
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .filter {
@@ -168,7 +165,7 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
-details > summary {
+details>summary {
     list-style: none;
 }
 
@@ -188,10 +185,6 @@ details > summary {
     width: 360px;
     left: 0;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
-.filter__list {
-    
 }
 
 .filter__item {
@@ -268,19 +261,19 @@ details > summary {
 }
 
 .categories__item--women {
-    background-image: url(../img/maska_woman.jpg);
+    background-image: url(../img/fon_woman.jpg);
 }
 
 .categories__item--men {
-    background-image: url(../img/maska_man.jpg);
+    background-image: url(../img/fon_man.jpg);
 }
 
 .categories__item--kids {
-    /* background-image: url(../img/maska_kids.jpg); */
+    /* background-image: url(../img/fon_kids.jpg); */
 }
 
 .categories__item--accessories {
-    background-image: url(../img/maska_acc.jpg);
+    background-image: url(../img/fon_acc.jpg);
     width: 100%;
     height: 180px;
 }
@@ -406,35 +399,36 @@ details > summary {
 }
 
 .pagination {
-	display: flex;
-	justify-content: center;
-	padding-top: 48px;
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
     padding-bottom: 96px;
 }
 
 .pagination__list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	gap: 13px;	
-	border: 1px solid #EBEBEB;
-	border-radius: 2px;
-	padding: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 13px;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    padding: 10px;
 }
 
 .pagination__item--separator {
-	margin: 0 -10px;
-	color: #EBEBEB;
+    margin: 0 -10px;
+    color: #EBEBEB;
 }
 
 .pagination__link {
-	color: #EBEBEB;
+    color: #EBEBEB;
     border: none;
     background-color: #FFFFFF;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+    text-decoration: none;
 }
 
 .pagination__link:hover {
@@ -443,7 +437,7 @@ details > summary {
 }
 
 .pagination__link--active {
-	color: #EF5B70;
+    color: #EF5B70;
 }
 
 .advantages {
@@ -604,10 +598,6 @@ details > summary {
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
-}
-
-.network {
-  
 }
 
 .network__list {
