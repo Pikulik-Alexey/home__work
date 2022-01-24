@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap header__flex">
+            <section class="header__left">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="header__search">
+                    <img src="img/poisk.svg" alt="search">
+                </button>
+            </section>
+            <nav class="header__right">
+                <button class="header__burg">
+                    <img src="img/burg.svg" alt="burger">
+                </button>
+                <a class="header__register" href="#">
+                    <img src="img/rega.svg" alt="rega">
+                </a>
+                <a class="header__cart" href="#">
+                    <img src="img/cart.svg" alt="cart">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="benefits">
+            <div class="wrap benefits__flex">
+                <h1 class="benefits__title">SHOPPING CART</h1>
+            </div>
+        </section>
+        <section class="basket">
+            <div class="wrap basket__flex">
+                <h2 class="visualy__hidden">Корзина с товарами</h2>
+                <section>
+                    <article class="ticket">
+                        <div class="ticket__img">
+                            <img src="img/card_three.jpg" width="262" height="306" alt="img">
+                        </div>
+                        <div class="ticket__text">
+                            <button><i class="fas fa-times"></i></button>
+                            <h3>MANGO PEOPLE <br> T-SHIRT</h3>
+                            <p>Price: <span class="ticket__text--decor">$300</span></p>
+                            <p>Color: Red</p>
+                            <p>Size: Xl </p>
+                            <p>Quantity: </p>
+                        </div>
+                    </article>
+                    <article class="ticket">
+                        <div class="ticket__img">
+                            <img src="img/card_seven.jpg" width="262" height="306" alt="img">
+                        </div>
+                        <div class="ticket__text">
+                            <button><i class="fas fa-times"></i></button>
+                            <h3>MANGO PEOPLE <br> T-SHIRT</h3>
+                            <p>Price: <span class="ticket__text--decor">$300</span></p>
+                            <p>Color: Red</p>
+                            <p>Size: Xl </p>
+                            <p>Quantity: </p>
+                        </div>
+                    </article>
+                    <article class="ticket__btn">
+                        <button>CLEAR SHOPPING CART</button>
+                        <button>CONTINUE SHOPPING</button>
+                    </article>
+                </section>
+                    <form class="" action="#">
+                        <input type="text" placeholder="Bangladesh">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="Postcode / Zip">
+                        <input type="submit" value="GET A QUOTE">
+                    </form>
+            </div>
+        </section>
+    </main>
+    <section class="feedback">
+        <div class="wrap feedback__flex">
+            <h2 class="visualy__hidden">обратная связь</h2>
+            <section class="feedback__left">
+                <div class="feedback__img">
+                    <img src="img/face.png" alt="">
+                </div>
+                <div class="feedback__text">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="feedback__text--italic">a
+                            pulvinar purus condimentum</span>“</p>
+                </div>
+            </section>
+            <section class="feedback__right">
+                <div>
+                    <h3>SUBSCRIBE <br>
+                        <span class="feedback__right--small">FOR OUR NEWLETTER AND PROMOTION</span>
+                    </h3>
+                </div>
+                <form action="#" class="feedback__unification">
+                    <input class="feedback__field" type="email" required placeholder="Enter Your Email" minlength="4"
+                        maxlength="30">
+                    <input class="feedback__btn" type="submit" value="Subscribe">
+                </form>
+            </section>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrap footer__flex">
+            <div class="footer__copyright">
+                <p>&copy;&nbsp;2021 Brand All Rights Reserved.</p>
+            </div>
+            <nav class="network">
+                <ul class="network__list">
+                    <li class="network__item">
+                        <a href="#" class="network__link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="network__item">
+                        <a href="#" class="network__link">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                    <li class="network__item">
+                        <a href="#" class="network__link">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </li>
+                    <li class="network__item">
+                        <a href="#" class="network__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
