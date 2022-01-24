@@ -99,7 +99,6 @@ body {
 
 .benefits {
     background-color: #F8F3F4;
-    margin-bottom: 51px;
 }
 
 .benefits__flex {
@@ -396,6 +395,43 @@ details>summary {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.slider {
+    border: 1px solid #EAEAEA;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider__btn {
+    fill: #000000;
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.15);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__btn:hover {
+    fill: #F16D7F;
+    cursor: pointer;
+}
+
+
+
+.commodity {
+    margin-top: 128px;
+    margin-bottom: 128px;
 }
 
 .pagination {
