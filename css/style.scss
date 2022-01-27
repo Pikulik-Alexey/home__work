@@ -1,3 +1,13 @@
+// переменные 
+$main-Color: #F16D7F;
+
+@mixin flex-center($align-items, $justify-content) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -41,14 +51,11 @@ body {
     background-color: #222222;
 
     &__flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-center(center, space-between);
     }
 
     &__left {
-        display: flex;
-        align-items: center;
+        @include flex-center(center, center);
         padding-top: 18px;
         padding-bottom: 19px;
     }
@@ -73,8 +80,7 @@ body {
     }
 
     &__right {
-        display: flex;
-        align-items: center;
+        @include flex-center(center, center);
         gap: 33px;
         padding-top: 26px;
         padding-bottom: 20px;
@@ -106,9 +112,7 @@ body {
     background-color: #F8F3F4;
 
     &__flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-center(center, space-between);
     }
 
     &__title {
@@ -116,7 +120,7 @@ body {
         padding-bottom: 60px;
         font-size: 24px;
         line-height: 29px;
-        color: #F16D7F;
+        color: $main-Color;
     }
 }
 
@@ -151,7 +155,7 @@ body {
 
     &__link--current {
         font-weight: bold;
-        color: #F16D7F;
+        color: $main-Color;
     }
 
     &__link[href]:hover {
@@ -215,9 +219,7 @@ details>summary {
     background-color: #F1E4E6;
 
     &__flex {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        @include flex-center(center, flex-end);
         height: 764px;
         background-image: url(../img/man.png);
         background-repeat: no-repeat;
@@ -235,7 +237,7 @@ details>summary {
             line-height: 40px;
             color: #222222;
             padding-left: 16px;
-            border-left: 12px solid#F16D7F;
+            border-left: 12px solid $main-Color;
         }
 
         &--small {
@@ -246,7 +248,7 @@ details>summary {
         }
 
         &--decor {
-            color: #F16D7F;
+            color: $main-Color;
         }
     }
 }
@@ -267,10 +269,8 @@ details>summary {
         background-color: #C4C4C4;
         width: 360px;
         height: 260px;
-        display: flex;
+        @include flex-center(center, center);
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
 
         &--women {
             background-image: url(../img/fon_woman.jpg);
@@ -301,7 +301,7 @@ details>summary {
         font-weight: bold;
         font-size: 24px;
         line-height: 28px;
-        color: #F16D7F;
+        color: $main-Color;
     }
 }
 
@@ -311,10 +311,8 @@ details>summary {
     margin-bottom: 96px;
 
     &__flex {
-        display: flex;
+        @include flex-center(center, center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     &__text {
@@ -337,9 +335,7 @@ details>summary {
     }
 
     &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center(center, center);
         margin-top: 48px;
     }
 
@@ -355,7 +351,7 @@ details>summary {
         text-decoration: none;
 
         &:hover {
-            background-color: #F16D7F;
+            background-color: $main-Color;
             border: 1px solid #FF6A6A;
             color: #FFFFFF;
         }
@@ -366,10 +362,8 @@ details>summary {
     margin-top: 64px;
 
     &__flex {
-        display: flex;
+        @include flex-center(center, center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -419,7 +413,7 @@ details>summary {
     & .price {
         font-size: 16px;
         line-height: 19px;
-        color: #F16D7F;
+        color: $main-Color;
         padding-left: 18px;
         padding-bottom: 20px;
     }
@@ -428,58 +422,81 @@ details>summary {
 // корзина
 
 .basket__flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   @include flex-center(center, space-between);
 }
 
 .ticket {
+    @include flex-center(center, flex-start);
+
+    &__text {
+        padding: 22px 22px 40px 31px;
+        width: 390px;
+
+        & h3 {
+            font-size: 24px;
+            line-height: 29px;
+            color: #222222;
+            padding-bottom: 42px;
+        }
+
+        & p {
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+
+            &:not(:last-child) {
+                padding-bottom: 6px;
+            }
+        }
+
+        &--decor {
+            color: $main-Color;
+        }
+    }
+
+    &__btn {
+        @include flex-center(center, flex-start);
+        gap: 193px;
+        margin-top: 72px;
+        margin-bottom: 128px;
+    }
+
+    &__title {
+        padding: 16px 34px;
+        background-color: #FFFFFF;
+        border: 1px solid #A4A4A4;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000
+    }
+}
+
+.regform {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
+    flex-direction: column;
+    width: 360px;
 
-.ticket__text {
-    padding: 22px 22px 62px 31px;
-    width: 390px;
-}
+    &__field {
+        padding: 14px 150px 14px 16px;
 
-.ticket__text h3 {
-    font-size: 24px;
-    line-height: 29px;
-    color: #222222;
-    padding-bottom: 42px;
+        &::placeholder {
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+    }
 }
-
-.ticket__text p {
-    font-size: 22px;
-    line-height: 26px;
-    color: #575757;
-}
-
-.ticket__text p:not(:last-child) {
-    padding-bottom: 6px;
-}
-
-.ticket__text--decor {
-    color: #F16D7F;
-}
-
 
 // слайдер
 
 .slider {
+    @include flex-center(center, center);
     border: 1px solid #EAEAEA;
     background-color: #F7F7F7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 60px;
 
     &__flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center(center, center);
     }
 
     &__btn {
@@ -488,12 +505,10 @@ details>summary {
         height: 47px;
         background-color: rgba(42, 42, 42, 0.15);
         border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center(center, center);
 
         &:hover {
-            fill: #F16D7F;
+            fill: $main-Color;
             cursor: pointer;
         }
     }
@@ -505,23 +520,19 @@ details>summary {
     &__flex {
         margin-top: -60px;
         background-color: #FFFFFF;
-        display: flex;
+        @include flex-center(center, center);
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     &__text {
-        display: flex;
+        @include flex-center(center, center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         & h2 {
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
-            color: #F16D7F;
+            color: $main-Color;
             padding-top: 64px;
             padding-bottom: 12px;
         }
@@ -547,7 +558,7 @@ details>summary {
         & .price {
             font-size: 24px;
             line-height: 29px;
-            color: #EF5B70;
+            color: $main-Color;
             padding-bottom: 65px;
         }
     }
@@ -555,7 +566,7 @@ details>summary {
     &__border {
         width: 63px;
         height: 3px;
-        background-color: #EF5B70;
+        background-color: $main-Color;
     }
 
     &__streak {
@@ -573,9 +584,7 @@ details>summary {
         fill: #F26376;
         padding: 14px 50px;
         cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center(center, center);
 
         &:hover {
             background-color: #F26376;
@@ -601,8 +610,7 @@ details>summary {
 // пагинация
 
 .pagination {
-    display: flex;
-    justify-content: center;
+    @include flex-center(center, center);
     padding-top: 48px;
     padding-bottom: 96px;
 
@@ -632,7 +640,7 @@ details>summary {
         }
 
         &--active {
-            color: #EF5B70;
+            color: $main-Color;
         }
     }
 
@@ -648,9 +656,7 @@ details>summary {
     background-color: #222224;
 
     &__flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include flex-center(center, space-around);
     }
 
     &__item {
@@ -712,9 +718,7 @@ details>summary {
     background-position: left bottom;
 
     &__flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-center(center, space-between);
     }
 
     &__img {
@@ -765,15 +769,14 @@ details>summary {
         &::placeholder {
             font-size: 14px;
             line-height: 17px;
-            display: flex;
-            align-items: center;
+            @include flex-center(center, center);
             color: #222224;
             opacity: 0.67;
         }
     }
 
     &__btn {
-        background-color: #F16D7F;
+        background-color: $main-Color;
         padding: 15px 20px;
         border: none;
         border-top-right-radius: 20px;
@@ -792,9 +795,7 @@ details>summary {
     background-color: #222222;
 
     &__flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-center(center, space-between);
     }
 
     &__copyright {
@@ -817,17 +818,15 @@ details>summary {
     }
 
     &__link {
+        @include flex-center(center, center);
         color: #000000;
         width: 32px;
         height: 32px;
         background-color: #FFFFFF;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-decoration: none;
 
         &:hover {
-            background-color: #F16D7F;
+            background-color: $main-Color;
             color: #FFFFFF;
         }
     }
