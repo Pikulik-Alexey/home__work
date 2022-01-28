@@ -1,0 +1,58 @@
+.header {
+    background-color: #222222;
+
+    &__flex {
+        @include flex-center(center, space-between);
+    }
+
+    &__left {
+        @include flex-center(center, center);
+        padding-top: 18px;
+        padding-bottom: 19px;
+    }
+
+    &__logo {
+        margin-right: 41px;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__search {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__right {
+        @include flex-center(center, center);
+        gap: 33px;
+        padding-top: 26px;
+        padding-bottom: 20px;
+    }
+
+    &__burg {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__register:hover {
+        opacity: 0.7;
+    }
+
+    &__cart:hover {
+        opacity: 0.7;
+    }
+
+}

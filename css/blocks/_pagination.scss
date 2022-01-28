@@ -1,0 +1,40 @@
+.pagination {
+    @include flex-center(center, center);
+    padding-top: 48px;
+    padding-bottom: 96px;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 13px;
+        border: 1px solid #EBEBEB;
+        border-radius: 2px;
+        padding: 10px;
+    }
+
+    &__link {
+        color: #EBEBEB;
+        border: none;
+        background-color: #FFFFFF;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        &--active {
+            color: $main-Color;
+        }
+    }
+
+    &__item--separator {
+        margin: 0 -10px;
+        color: #EBEBEB;
+    }
+}
