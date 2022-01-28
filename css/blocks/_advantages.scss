@@ -31,19 +31,15 @@
         }
 
         & h3 {
-            font-size: 20px;
-            line-height: 24px;
+            @include big(#FBFBFB);
             text-align: center;
-            color: #FBFBFB;
             padding-top: 28px;
             padding-bottom: 16px;
         }
 
         & p {
-            font-size: 13.972px;
-            line-height: 17px;
+            @include smallest(#FBFBFB);
             text-align: center;
-            color: #FBFBFB;
             padding-bottom: 104px;
             font-weight: 300;
             padding-left: 20px;

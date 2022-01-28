@@ -15,12 +15,10 @@
     }
 
     &__link {
-        color: #EBEBEB;
+        @include medium(#EBEBEB);
         border: none;
         background-color: #FFFFFF;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
         text-decoration: none;
 
         &:hover {

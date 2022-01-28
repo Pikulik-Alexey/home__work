@@ -17,10 +17,8 @@
     }
 
     &__text {
-        font-size: 20px;
-        line-height: 24px;
+        @include big(#222224);
         text-align: center;
-        color: #222224;
         max-width: 360px;
 
         &--italic {
@@ -57,10 +55,8 @@
         outline: none;
 
         &::placeholder {
-            font-size: 14px;
-            line-height: 17px;
+            @include smallest(#222224);
             @include flex-center(center, center);
-            color: #222224;
             opacity: 0.67;
         }
     }
@@ -71,11 +67,9 @@
         border: none;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        font-size: 14px;
-        line-height: 17px;
+        @include smallest(#FFFFFF);
         align-items: center;
         text-align: center;
-        color: #FFFFFF;
         cursor: pointer;
     }
 }

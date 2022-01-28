@@ -35,9 +35,7 @@
     }
 
     &__sales {
-        line-height: 19px;
-        font-size: 16px;
-        color: #FFFFFF;
+        @include medium(#FFFFFF)
     }
 
     &__name {

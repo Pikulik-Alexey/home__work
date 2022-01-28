@@ -19,9 +19,7 @@
     &__link {
         text-decoration: none;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
+        @include smallest(#636363);
         /* transition: 0.2s; */
     }
 
