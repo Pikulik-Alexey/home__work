@@ -75,7 +75,7 @@ body {
 
 .filter {
     width: 360px;
-    position: relative;
+    
     outline: none;
     border: none;
 }
@@ -99,11 +99,15 @@ details>summary {
 }
 
 .filter__content {
-    position: absolute;
+    position: relative;
     background-color: #FFFFFF;
     width: 360px;
     left: 0;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter__list {
+    position: absolute;
 }
 
 .filter__item {

@@ -817,7 +817,7 @@ body {
           justify-content: center;
   border: 1px solid #EAEAEA;
   background-color: #F7F7F7;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
 }
 
 .slider__flex {
@@ -858,7 +858,7 @@ body {
 }
 
 .description__flex {
-  margin-top: -60px;
+  margin-top: -65px;
   background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,7 +1038,6 @@ body {
 
 .filter {
   width: 360px;
-  position: relative;
   outline: none;
   border: none;
 }
@@ -1062,12 +1061,16 @@ details > summary {
 }
 
 .filter__content {
-  position: absolute;
+  position: relative;
   background-color: #FFFFFF;
   width: 360px;
   left: 0;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter__list {
+  position: absolute;
 }
 
 .filter__item {
