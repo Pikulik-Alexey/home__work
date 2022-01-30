@@ -1,0 +1,38 @@
+.footer {
+    background-color: #222222;
+
+    &__flex {
+        @include flex-center(center, space-between);
+    }
+
+    &__copyright {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include medium(#FBFBFB);
+    }
+}
+
+.network {
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        gap: 7px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    &__link {
+        @include flex-center(center, center);
+        color: #000000;
+        width: 32px;
+        height: 32px;
+        background-color: #FFFFFF;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $main-Color;
+            color: #FFFFFF;
+        }
+    }
+}

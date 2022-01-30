@@ -1,0 +1,15 @@
+.benefits {
+    background-color: #F8F3F4;
+
+    &__flex {
+        @include flex-center(center, space-between);
+    }
+
+    &__title {
+        padding-top: 59px;
+        padding-bottom: 60px;
+        font-size: $font-size;
+        line-height: $font-size + 5;
+        color: $main-Color;
+    }
+}

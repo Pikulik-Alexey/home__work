@@ -1,0 +1,80 @@
+.description {
+    &__flex {
+        margin-top: -60px;
+        background-color: #FFFFFF;
+        @include flex-center(center, center);
+        flex-direction: column;
+    }
+
+    &__text {
+        @include flex-center(center, center);
+        flex-direction: column;
+
+        & h2 {
+            font-weight: 300;
+            @include smallest($main-Color);
+            padding-top: 64px;
+            padding-bottom: 12px;
+        }
+
+        & h3 {
+            font-weight: 300;
+            font-size: $font-size - 4;
+            line-height: $font-size - 2;
+            color: #4D4D4D;
+            padding-top: 12px;
+            padding-bottom: 48px;
+        }
+
+        & p {
+            @include smallest(#5E5E5E);
+            text-align: center;
+            max-width: 555px;
+            padding-bottom: 32px;
+        }
+
+        & .price {
+            font-size: $font-size;
+            line-height: $font-size + 5;
+            color: $main-Color;
+            padding-bottom: 65px;
+        }
+    }
+
+    &__border {
+        width: 63px;
+        height: 3px;
+        background-color: $main-Color;
+    }
+
+    &__streak {
+        width: 641px;
+        height: 1px;
+        background-color: #EAEAEA;
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: 1px solid #FF6A6A;
+        @include  medium(#F26376);
+        fill: #F26376;
+        text-decoration: none;
+        padding: 14px 50px;
+        cursor: pointer;
+        @include flex-center(center, center);
+
+        &:hover {
+            background-color: #F26376;
+            color: #FFFFFF;
+            fill: #FFFFFF;
+            border: 1px solid black;
+        }
+
+        &:active {
+            background-color: chocolate;
+            color: #000000;
+            fill: #000000;
+            border: 1px solid red;
+        }
+    }
+}

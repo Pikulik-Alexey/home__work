@@ -1,0 +1,196 @@
+// переменные 
+@import "var";
+
+// миксины
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 2;
+}
+
+.wrap {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.visualy__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(1px 1px 1px 1px);
+    left: -9999px;
+}
+
+// шапка
+@import "blocks/header";
+// промо
+@import "blocks/promo";
+// категории
+@import "blocks/categories";
+// карточки товаров
+@import "blocks/products";
+// преимущества
+@import "blocks/advantages";
+// обратная связь
+@import "blocks/feedback";
+// бенефис
+@import "blocks/benefits";
+// хлебные крошки
+@import "blocks/breadcrumbs";
+// фильтр
+
+// пагинация
+@import "blocks/pagination";
+// слайдер
+@import "blocks/slider";
+// описание
+@import "blocks/description";
+
+// футер 
+@import "blocks/footer";
+
+
+
+// фильтр
+
+.filter {
+    width: 360px;
+    position: relative;
+    outline: none;
+    border: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details>summary {
+    list-style: none;
+}
+
+.filter[open] {
+    padding-left: 34px;
+    background-color: #FFFFFF;
+    /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
+}
+
+.filter[open]>summary {
+    color: #EF5B70;
+}
+
+.filter__content {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 360px;
+    left: 0;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter__item {
+    list-style-type: none;
+    padding-bottom: 11px;
+}
+
+.filter__link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+}
+
+// корзина
+
+.basket__flex {
+    @include flex-center(center, space-between);
+}
+
+.ticket {
+    @include flex-center(center, flex-start);
+
+    &__text {
+        padding: 22px 22px 40px 31px;
+        width: 390px;
+
+        & h3 {
+            font-size: 24px;
+            line-height: 29px;
+            color: #222222;
+            padding-bottom: 42px;
+        }
+
+        & p {
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+
+            &:not(:last-child) {
+                padding-bottom: 6px;
+            }
+        }
+
+        &--decor {
+            color: $main-Color;
+        }
+    }
+
+    &__btn {
+        @include flex-center(center, flex-start);
+        gap: 193px;
+        margin-top: 72px;
+        margin-bottom: 128px;
+    }
+
+    &__title {
+        padding: 16px 34px;
+        background-color: #FFFFFF;
+        border: 1px solid #A4A4A4;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000
+    }
+}
+
+.regform {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+
+    &__field {
+        padding: 14px 150px 14px 16px;
+
+        &::placeholder {
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+    }
+}
+
+
+
+
+.dropdown {
+    padding-top: 65px;
+    padding-bottom: 49px;
+}
+
