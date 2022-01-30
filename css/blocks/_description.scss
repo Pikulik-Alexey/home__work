@@ -59,15 +59,19 @@
         @include  medium(#F26376);
         fill: #F26376;
         text-decoration: none;
-        padding: 14px 50px;
+        padding: 10px 35px;
         cursor: pointer;
         @include flex-center(center, center);
+        @include transform;
+        & svg {
+            margin-right: 23px;
+            vertical-align: middle;
+        }
 
         &:hover {
             background-color: #F26376;
             color: #FFFFFF;
             fill: #FFFFFF;
-            border: 1px solid black;
         }
 
         &:active {

@@ -32,3 +32,8 @@
     line-height: 24px;
     color: $color;
 }
+
+// трансформ
+@mixin transform {
+    transition: background-color 0.3s, color 0.3s, fill 0.3s;
+}

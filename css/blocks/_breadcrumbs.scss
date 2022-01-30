@@ -20,7 +20,7 @@
         text-decoration: none;
         font-weight: 300;
         @include smallest(#636363);
-        /* transition: 0.2s; */
+        @include transform;
     }
 
     &__link--current {
@@ -29,8 +29,7 @@
     }
 
     &__link[href]:hover {
-        /* text-decoration: underline;
-      color: #F16D7F; */
-        opacity: 0.7;
+        text-decoration: underline;
+        color: $main-Color;
     }
 }

@@ -33,6 +33,7 @@
         &:hover {
             background-color: $main-Color;
             color: #FFFFFF;
+            @include transform;
         }
     }
 }

@@ -15,9 +15,11 @@
         background-color: rgba(42, 42, 42, 0.15);
         border: none;
         @include flex-center(center, center);
+        @include transform;
 
         &:hover {
             fill: $main-Color;
+            background-color: gray;
             cursor: pointer;
         }
     }
