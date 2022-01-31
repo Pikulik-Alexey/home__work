@@ -849,6 +849,174 @@ body {
   gap: 30px;
 }
 
+.fashionable {
+  position: relative;
+  width: 132px;
+}
+
+.fashionable__title {
+  background-image: url(/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.fashionable__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  padding-left: 16px;
+  position: absolute;
+  width: 80px;
+  z-index: 1000;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.fashionable__item {
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  cursor: pointer;
+}
+
+.fashionable__item:hover {
+  color: #F16D7F;
+}
+
+.fashionable__item:first-child {
+  padding-top: 7px;
+}
+
+.fashionable__item:last-child {
+  padding-bottom: 11px;
+}
+
+.parameter {
+  position: relative;
+  width: 49px;
+}
+
+.parameter__title {
+  background-image: url(/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.parameter__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  padding-left: 16px;
+  position: absolute;
+  width: 80px;
+  z-index: 1000;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.parameter__item {
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  cursor: pointer;
+}
+
+.parameter__item:hover {
+  color: #F16D7F;
+}
+
+.parameter__item:first-child {
+  padding-top: 7px;
+}
+
+.parameter__item:last-child {
+  padding-bottom: 11px;
+}
+
+.cost {
+  position: relative;
+  width: 59px;
+}
+
+.cost__title {
+  background-image: url(/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.cost__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  padding-left: 16px;
+  position: absolute;
+  width: 80px;
+  z-index: 1000;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.cost__item {
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  cursor: pointer;
+}
+
+.cost__item:hover {
+  color: #F16D7F;
+}
+
+.cost__item:first-child {
+  padding-top: 7px;
+}
+
+.cost__item:last-child {
+  padding-bottom: 11px;
+}
+
 .filter {
   width: 360px;
   position: relative;
