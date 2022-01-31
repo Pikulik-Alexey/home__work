@@ -1,0 +1,71 @@
+.burger {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 78px;
+    right: 0px;
+    height: 764px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 232px;
+    padding: 33px;
+    &__box {
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        top: -20px;
+        right: -17px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        @include transform;
+    
+        &:hover {
+            fill: $main-Color;
+        }
+    }
+    &__title {
+        @include smallest(#000000);
+        font-weight: bold;
+        margin-bottom: 24px;
+        margin-left: 1px;
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__link {
+        @include smallest($main-Color);
+        text-decoration: none;
+        @include transform;
+    
+        &:hover {
+            color: #000000;
+        }
+    }
+    &__close {
+        display: none;
+    }
+}
+
+.miniburger__list {
+    list-style-type: none;
+}
+
+.miniburger__list {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.miniburger__item {
+    padding-bottom: 11px;
+}
+
+.miniburger__link {
+    @include smallest(#6F6E6E);
+    text-decoration: none;
+    padding-left: 21px;
+    @include transform;
+
+    &:hover {
+        color: $main-Color;
+    }
+}

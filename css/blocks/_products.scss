@@ -35,12 +35,12 @@
         background-color: #FFFFFF;
         cursor: pointer;
         text-decoration: none;
+        @include transform;
 
         &:hover {
             background-color: #F16D7F;
             border: 1px solid #FF6A6A;
             color: #FFFFFF;
-            @include transform;
         }
     }
 }
