@@ -8,6 +8,13 @@
     gap: 30px;
 }
 
+.dropdown {
+    padding-top: 65px;
+    padding-bottom: 49px;
+    @include flex-center(center, center);
+    gap: 23px;
+}
+
 .fashionable {
     position: relative;
     width: 132px;
@@ -220,4 +227,137 @@
 
 .filtrate[open] .filter__rank {
     color: #EF5B70;
+}
+
+
+.color {
+    position: relative;
+    width: 129px;
+
+    &__title {
+        background-image: url(/img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        display: block;
+        @include smallest(#6F6E6E);
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding-left: 16px;
+        position: absolute;
+        width: 80px;
+        z-index: 1000;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+    &__item {
+        padding-bottom: 6px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        @include transform;
+        cursor: pointer;
+        &:hover {
+            color: $main-Color;
+        }
+
+        &:first-child {
+            padding-top: 7px;
+        }
+
+        &:last-child {
+            padding-bottom: 11px;
+        }
+    }
+}
+
+.cize {
+    position: relative;
+    width: 110px;
+
+    &__title {
+        background-image: url(/img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        display: block;
+        @include smallest(#6F6E6E);
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding-left: 16px;
+        position: absolute;
+        width: 80px;
+        z-index: 1000;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+    &__item {
+        padding-bottom: 6px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        @include transform;
+        cursor: pointer;
+        &:hover {
+            color: $main-Color;
+        }
+
+        &:first-child {
+            padding-top: 7px;
+        }
+
+        &:last-child {
+            padding-bottom: 11px;
+        }
+    }
+}
+
+.quantity {
+    position: relative;
+    width: 91px;
+
+    &__title {
+        background-image: url(/img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        display: block;
+        @include smallest(#6F6E6E);
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding-left: 16px;
+        position: absolute;
+        width: 80px;
+        z-index: 1000;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+    &__item {
+        padding-bottom: 6px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        @include transform;
+        cursor: pointer;
+        &:hover {
+            color: $main-Color;
+        }
+
+        &:first-child {
+            padding-top: 7px;
+        }
+
+        &:last-child {
+            padding-bottom: 11px;
+        }
+    }
 }

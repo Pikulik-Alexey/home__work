@@ -21,11 +21,13 @@
         font-weight: 300;
         text-decoration: none;
         @include transform;
+        transition: 1s;
 
         &:hover {
             cursor: pointer;
             color: $main-Color;
             fill: $main-Color;
+            transform: scale(2) rotateX(360deg);
         }
 
         &--active {

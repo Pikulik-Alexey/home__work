@@ -36,11 +36,28 @@
         cursor: pointer;
         text-decoration: none;
         @include transform;
+        // transition: 0.3s;
 
         &:hover {
             background-color: #F16D7F;
             border: 1px solid #FF6A6A;
             color: #FFFFFF;
+            // transform: rotate(1080deg);
+            animation: rotate-scale-up 0.65s linear 3 both;
+
+            @keyframes rotate-scale-up {
+                0% {
+                    transform: scale(1) rotateZ(0);
+                }
+    
+                50% {
+                    transform: scale(2) rotateZ(180deg);
+                }
+    
+                100% {
+                    transform: scale(1) rotateZ(360deg);
+                }
+            }
         }
     }
 }
@@ -74,9 +91,9 @@
     overflow: hidden;
 
     &:hover .card__overlay {
-        display: flex;
+        transform: scale(1);
     }
-    
+
     &__img {
         padding-bottom: 25px;
     }
@@ -112,7 +129,9 @@
         height: 420px;
         @include flex-center(center, center);
         background-color: rgba(58, 56, 56, 0.86);
-        display: none;
+        transform: scale(0);
+        transition: 2s;
+        transform-origin: bottom right;
     }
 
     &__btn {
@@ -123,6 +142,8 @@
         padding: 10px 20px;
         cursor: pointer;
         @include transform;
+        transition: 1s;
+
         & svg {
             vertical-align: middle;
             margin-right: 11px;
@@ -132,6 +153,7 @@
             background-color: #FFFFFF;
             color: #000000;
             fill: #000000;
+            transform: rotateY(360deg);
         }
     }
 }

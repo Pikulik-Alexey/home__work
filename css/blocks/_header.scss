@@ -26,10 +26,12 @@
         background-color: transparent;
         cursor: pointer;
         fill: #FFFFFF;
+        @include transform;
+        transition: 0.3s;
 
         &:hover {
             fill: $main-Color;
-            @include transform;
+            transform: scale(1.25);
         }
     }
 
@@ -45,10 +47,27 @@
         border: none;
         cursor: pointer;
         fill: #FFFFFF;
+        @include transform;
+        // transition: 0.3s;
+        animation: pulsing 2s infinite alternate;
+
+        @keyframes pulsing {
+            0% {
+                transform: scale(0.75, 0.75)
+            }
+
+            50% {
+                transform: scale(1.0, 1.0);
+            }
+
+            100% {
+                transform: scale(0.65, 0.65);
+            }
+        }
 
         &:hover {
             fill: $main-Color;
-            @include transform;
+            // transform: scale(1.25);
         }
     }
 
@@ -57,10 +76,12 @@
         border: none;
         cursor: pointer;
         fill: #FFFFFF;
+        @include transform;
+        transition: 0.3s;
 
         &:hover {
             fill: $main-Color;
-            @include transform;
+            transform: scale(1.25);
         }
     }
 
@@ -69,10 +90,12 @@
         border: none;
         cursor: pointer;
         fill: #FFFFFF;
+        @include transform;
+        transition: 0.3s;
 
         &:hover {
             fill: $main-Color;
-            @include transform;
+            transform: scale(1.25);
         }
     }
 }
