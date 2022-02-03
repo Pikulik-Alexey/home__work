@@ -79,7 +79,23 @@ body {
 }
 
 .ticket {
+    position: relative;
     @include flex-center(center, flex-start);
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    margin-bottom: 40px;
+
+    & img {
+        vertical-align: middle;
+    }
+
+    &__close {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        background-color: transparent;
+        border: none;
+        color: #575757;
+    }
 
     &__text {
         padding: 22px 22px 40px 31px;
@@ -139,9 +155,3 @@ body {
         }
     }
 }
-
-
-
-
-
-
