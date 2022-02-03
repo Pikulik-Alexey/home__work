@@ -954,7 +954,7 @@ body {
 }
 
 .fashionable__title {
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
   display: block;
@@ -1010,7 +1010,7 @@ body {
 }
 
 .parameter__title {
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
   display: block;
@@ -1066,7 +1066,7 @@ body {
 }
 
 .cost__title {
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
   display: block;
@@ -1212,7 +1212,7 @@ body {
 }
 
 .color__title {
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
   display: block;
@@ -1268,7 +1268,7 @@ body {
 }
 
 .cize__title {
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
   display: block;
@@ -1324,7 +1324,7 @@ body {
 }
 
 .quantity__title {
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
   display: block;
