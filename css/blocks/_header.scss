@@ -1,5 +1,6 @@
 .header {
     background-color: #222222;
+    position: relative;
 
     &__flex {
         @include flex-center(center, space-between);
@@ -24,9 +25,13 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
+        fill: #FFFFFF;
+        @include transform;
+        transition: 0.3s;
 
         &:hover {
-            opacity: 0.7;
+            fill: $main-Color;
+            transform: scale(1.25);
         }
     }
 
@@ -41,18 +46,56 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        fill: #FFFFFF;
+        @include transform;
+        // transition: 0.3s;
+        animation: pulsing 2s infinite alternate;
+
+        @keyframes pulsing {
+            0% {
+                transform: scale(0.75, 0.75)
+            }
+
+            50% {
+                transform: scale(1.0, 1.0);
+            }
+
+            100% {
+                transform: scale(0.65, 0.65);
+            }
+        }
 
         &:hover {
-            opacity: 0.7;
+            fill: $main-Color;
+            // transform: scale(1.25);
         }
     }
 
-    &__register:hover {
-        opacity: 0.7;
+    &__register {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        fill: #FFFFFF;
+        @include transform;
+        transition: 0.3s;
+
+        &:hover {
+            fill: $main-Color;
+            transform: scale(1.25);
+        }
     }
 
-    &__cart:hover {
-        opacity: 0.7;
-    }
+    &__cart {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        fill: #FFFFFF;
+        @include transform;
+        transition: 0.3s;
 
+        &:hover {
+            fill: $main-Color;
+            transform: scale(1.25);
+        }
+    }
 }

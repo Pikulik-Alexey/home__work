@@ -43,6 +43,8 @@ body {
 
 // шапка
 @import "blocks/header";
+// бургер меню
+@import "blocks/burger-menu";
 // промо
 @import "blocks/promo";
 // категории
@@ -57,8 +59,8 @@ body {
 @import "blocks/benefits";
 // хлебные крошки
 @import "blocks/breadcrumbs";
-// фильтр
-
+// фильтр и выпадающие элементы
+@import "blocks/filter";
 // пагинация
 @import "blocks/pagination";
 // слайдер
@@ -69,54 +71,6 @@ body {
 // футер 
 @import "blocks/footer";
 
-
-
-// фильтр
-
-.filter {
-    width: 360px;
-    position: relative;
-    outline: none;
-    border: none;
-}
-
-details summary::-webkit-details-marker {
-    display: none;
-}
-
-details>summary {
-    list-style: none;
-}
-
-.filter[open] {
-    padding-left: 34px;
-    background-color: #FFFFFF;
-    /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
-}
-
-.filter[open]>summary {
-    color: #EF5B70;
-}
-
-.filter__content {
-    position: absolute;
-    background-color: #FFFFFF;
-    width: 360px;
-    left: 0;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
-.filter__item {
-    list-style-type: none;
-    padding-bottom: 11px;
-}
-
-.filter__link {
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    text-decoration: none;
-}
 
 // корзина
 
@@ -189,8 +143,5 @@ details>summary {
 
 
 
-.dropdown {
-    padding-top: 65px;
-    padding-bottom: 49px;
-}
+
 

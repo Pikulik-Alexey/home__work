@@ -8,27 +8,35 @@
         gap: 30px;
     }
 
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 22, 22, 0.7);
+    }
+    
     &__item {
         background-color: #C4C4C4;
         width: 360px;
         height: 260px;
         @include flex-center(center, center);
         flex-direction: column;
+        position: relative;
 
         &--women {
-            background-image: url(../img/fon_woman.jpg);
+            background-image: url(../img/women.jpg);
         }
 
         &--men {
-            background-image: url(../img/fon_man.jpg);
+            background-image: url(../img/men.jpg);
         }
 
         &--kids {
-            background-image: url(../img/fon_kids.jpg);
+            background-image: url(../img/kids.jpg);
         }
 
         &--accessories {
-            background-image: url(../img/fon_acc.jpg);
+            background-image: url(../img/acces.jpg);
             width: 100%;
             height: 180px;
         }

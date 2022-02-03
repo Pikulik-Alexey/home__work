@@ -29,10 +29,13 @@
         height: 32px;
         background-color: #FFFFFF;
         text-decoration: none;
+        @include transform;
+        transform: 0.3s;
 
         &:hover {
             background-color: $main-Color;
             color: #FFFFFF;
+            transform: scale(2);
         }
     }
 }
