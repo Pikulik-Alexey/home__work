@@ -124,7 +124,7 @@
                             <p>Price: <span class="ticket__text--decor">$300</span></p>
                             <p>Color: Red</p>
                             <p>Size: Xl </p>
-                            <p>Quantity: </p>
+                            <p>Quantity: <input class="ticket__field" type="number"></p>
                         </div>
                         <button class="ticket__close"><i class="fas fa-times"></i></button>
                     </article>
@@ -137,22 +137,31 @@
                             <p>Price: <span class="ticket__text--decor">$300</span></p>
                             <p>Color: Red</p>
                             <p>Size: Xl </p>
-                            <p>Quantity: </p>
+                            <p>Quantity: <input class="ticket__field" type="number"> </p>
                         </div>
                         <button class="ticket__close"><i class="fas fa-times"></i></button>
                     </article>
                     <article class="ticket__btn">
                         <button class="ticket__title">CLEAR SHOPPING CART</button>
-                        <button class="ticket__title">CONTINUE SHOPPING</button>
+                        <a class="ticket__title" href="catalog.html">CONTINUE SHOPPING</a>
                     </article>
                 </section>
-                <form class="regform" action="#">
-                    <input class="regform__field" type="text" minlength="2" placeholder="Bangladesh">
-                    <input class="regform__field" type="text" placeholder="State">
-                    <input class="regform__field" type="text" placeholder="Postcode / Zip">
+                <div class="regform-wrapper">
+                    <form class="regform" action="#">
+                        <p class="regform__title">SHIPPING ADRESS</p>
+                        <input class="regform__field" type="text" minlength="2" placeholder="Bangladesh">
+                        <input class="regform__field" type="text" placeholder="State">
+                        <input class="regform__field" type="text" placeholder="Postcode / Zip">
+                        <input class="regform__btn" type="submit" value="GET A QUOTE">
+                    </form>
 
-                    <input class="regform__btn" type="submit" value="GET A QUOTE">
-                </form>
+                    <section class="total-price">
+                        <h3>SUB TOTAL <span class="total-price--decoration">$900</span></h3>
+                        <p>GRAND TOTAL <span class="total-price--decor">$900</span></p>
+                        <div class="total-price__border"></div>
+                        <button class="total-price__btn">PROCEED TO CHECKOUT</button>
+                    </section>
+                </div>
             </div>
         </section>
     </main>
