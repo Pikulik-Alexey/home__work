@@ -99,3 +99,14 @@
         }
     }
 }
+
+// планшет
+
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+
+    .header__register, .header__cart {
+        display: none;
+    }
+}

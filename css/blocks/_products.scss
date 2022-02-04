@@ -49,11 +49,11 @@
                 0% {
                     transform: scale(1) rotateZ(0);
                 }
-    
+
                 50% {
                     transform: scale(2) rotateZ(180deg);
                 }
-    
+
                 100% {
                     transform: scale(1) rotateZ(360deg);
                 }
@@ -79,7 +79,7 @@
 .container {
     max-width: 1140px;
     width: 100%;
-    display: flex;
+    @include flex-center(center, center);
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -154,6 +154,32 @@
             color: #000000;
             fill: #000000;
             transform: rotateY(360deg);
+        }
+    }
+}
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+    .container {
+        gap: 16px;
+    }
+
+    .products {
+        margin-bottom: 64px;
+
+        &__item {
+            margin-top: 32px;
+        }
+    }
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .products {
+        margin-bottom: 96px;
+
+        &__item {
+            margin-top: 41px;
         }
     }
 }

@@ -35,3 +35,47 @@
         }
     }
 }
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+    .promo__flex {
+        height: 367px;
+        background-position: 0 0;
+        background-size: contain;
+    }
+
+    .promo__title {
+        margin-right: 33px;
+
+        & h1 {
+            font-size: 44px;
+            line-height: 35px;
+        }
+
+        &--small {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .promo__flex {
+        background-image: none;
+        height: 364px;
+        justify-content: center;
+    }
+    .promo__title {
+
+        & h1 {
+            font-size: 38px;
+            line-height: 28px;
+        }
+
+        &--small {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}

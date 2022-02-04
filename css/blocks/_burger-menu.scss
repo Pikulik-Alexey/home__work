@@ -69,3 +69,13 @@
         color: $main-Color;
     }
 }
+
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+    .burger {
+        display: none;
+    }
+}
+
+// мобильный
