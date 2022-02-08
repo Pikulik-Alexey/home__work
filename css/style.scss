@@ -26,10 +26,16 @@ body {
 }
 
 .wrap {
-    max-width: 1160px;
-    padding: 0 10px;
+    max-width: 1140px;
+    padding: 0 16px;
     margin: 0 auto;
-    width: 100%;
+    box-sizing: content-box;
+}
+
+@media(max-width: $mobile-breakpoint) {
+    .wrap {
+        padding: 0 8px;
+    }
 }
 
 .visualy__hidden {
@@ -67,81 +73,109 @@ body {
 @import "blocks/slider";
 // описание
 @import "blocks/description";
-
+// корзина, итоговая цена, форма регистрации
+@import "blocks/basket";
 // футер 
 @import "blocks/footer";
 
 
-// корзина
-
-.basket__flex {
+.application-form__flex {
     @include flex-center(center, space-between);
+    gap: 128px;
 }
 
-.ticket {
-    @include flex-center(center, flex-start);
+.communication {
+    display: flex;
+    flex-direction: column;
 
-    &__text {
-        padding: 22px 22px 40px 31px;
-        width: 390px;
-
-        & h3 {
-            font-size: 24px;
-            line-height: 29px;
-            color: #222222;
-            padding-bottom: 42px;
-        }
-
-        & p {
-            font-size: 22px;
-            line-height: 26px;
-            color: #575757;
-
-            &:not(:last-child) {
-                padding-bottom: 6px;
-            }
-        }
-
-        &--decor {
-            color: $main-Color;
-        }
-    }
-
-    &__btn {
-        @include flex-center(center, flex-start);
-        gap: 193px;
-        margin-top: 72px;
-        margin-bottom: 128px;
+    & h3 {
+        font-weight: 300;
+        @include medium(#222222);
     }
 
     &__title {
-        padding: 16px 34px;
-        background-color: #FFFFFF;
-        border: 1px solid #A4A4A4;
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000
+        margin-top: 64px;
     }
-}
 
-.regform {
-    display: flex;
-    flex-direction: column;
-    width: 360px;
+    & p {
+        font-weight: 300;
+        @include tiny(#B1B1B1);
+        margin-top: 15px;
+        margin-bottom: 39px;
+    }
 
     &__field {
-        padding: 14px 150px 14px 16px;
+        width: 360px;
+        padding: 12px 16px 15px 16px;
+        margin-top: 21px;
 
         &::placeholder {
-            font-size: 13px;
-            line-height: 16px;
-            color: #B1B1B1;
+            font-weight: 300;
+            @include tiny(#B1B1B1);
+        }
+    }
+
+    &__radio {
+        border: none;
+        margin-top: 31px;
+        margin-bottom: 33px;
+    }
+
+    &__btn {
+        background-color: $main-Color;
+        border: none;
+        @include smallest(#FFFFFF);
+        width: 167px;
+        padding: 16px 29px;
+        margin-bottom: 96px;
+        cursor: pointer;
+        @include transform;
+
+        &:hover {
+            color: $main-Color;
+            background-color: #000000;
+        }
+
+        & .decor {
+            margin-left: 20px;
         }
     }
 }
 
+.privilege {
+    display: block;
+    align-self: flex-start;
 
+    & h3 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-top: 64px;
+    }
 
+    & p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 21px;
+        margin-top: 22px;
+    }
 
+    &__list {
+        list-style-type: none;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-left: 30px;
+    }
 
-
+    &__item {
+        background-image: url(../img/privilege__icon.svg);
+        background-repeat: no-repeat;
+        // background-position: -10px;
+        margin-bottom: 16px;
+    }
+}

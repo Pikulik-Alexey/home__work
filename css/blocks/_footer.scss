@@ -35,7 +35,23 @@
         &:hover {
             background-color: $main-Color;
             color: #FFFFFF;
-            transform: scale(2);
+            transform: scale(1.25);
         }
+    }
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .footer__flex {
+        flex-direction: column-reverse;
+    }
+
+    .footer__copyright {
+        padding-top: 40px;
+        padding-bottom: 9px;
+    }
+
+    .network {
+        margin-top: 43px;
     }
 }

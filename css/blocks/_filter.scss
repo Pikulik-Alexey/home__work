@@ -20,7 +20,7 @@
     width: 132px;
 
     &__title {
-        background-image: url(/img/arrow.svg);
+        background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center right;
         display: block;
@@ -28,6 +28,7 @@
         cursor: pointer;
         margin-bottom: 5px;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -38,6 +39,7 @@
         z-index: 1000;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
+
     &__item {
         padding-bottom: 6px;
         font-size: 14px;
@@ -45,6 +47,7 @@
         color: #6F6E6E;
         @include transform;
         cursor: pointer;
+
         &:hover {
             color: $main-Color;
         }
@@ -64,7 +67,7 @@
     width: 49px;
 
     &__title {
-        background-image: url(/img/arrow.svg);
+        background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center right;
         display: block;
@@ -72,6 +75,7 @@
         cursor: pointer;
         margin-bottom: 5px;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -82,6 +86,7 @@
         z-index: 1000;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
+
     &__item {
         padding-bottom: 6px;
         font-size: 14px;
@@ -89,6 +94,7 @@
         color: #6F6E6E;
         @include transform;
         cursor: pointer;
+
         &:hover {
             color: $main-Color;
         }
@@ -108,7 +114,7 @@
     width: 59px;
 
     &__title {
-        background-image: url(/img/arrow.svg);
+        background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center right;
         display: block;
@@ -116,6 +122,7 @@
         cursor: pointer;
         margin-bottom: 5px;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -126,6 +133,7 @@
         z-index: 1000;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
+
     &__item {
         padding-bottom: 6px;
         font-size: 14px;
@@ -133,6 +141,7 @@
         color: #6F6E6E;
         @include transform;
         cursor: pointer;
+
         &:hover {
             color: $main-Color;
         }
@@ -235,7 +244,7 @@
     width: 129px;
 
     &__title {
-        background-image: url(/img/arrow.svg);
+        background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center right;
         display: block;
@@ -243,6 +252,7 @@
         cursor: pointer;
         margin-bottom: 5px;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -253,6 +263,7 @@
         z-index: 1000;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
+
     &__item {
         padding-bottom: 6px;
         font-size: 14px;
@@ -260,6 +271,7 @@
         color: #6F6E6E;
         @include transform;
         cursor: pointer;
+
         &:hover {
             color: $main-Color;
         }
@@ -279,7 +291,7 @@
     width: 110px;
 
     &__title {
-        background-image: url(/img/arrow.svg);
+        background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center right;
         display: block;
@@ -287,6 +299,7 @@
         cursor: pointer;
         margin-bottom: 5px;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -297,6 +310,7 @@
         z-index: 1000;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
+
     &__item {
         padding-bottom: 6px;
         font-size: 14px;
@@ -304,6 +318,7 @@
         color: #6F6E6E;
         @include transform;
         cursor: pointer;
+
         &:hover {
             color: $main-Color;
         }
@@ -323,7 +338,7 @@
     width: 91px;
 
     &__title {
-        background-image: url(/img/arrow.svg);
+        background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center right;
         display: block;
@@ -331,6 +346,7 @@
         cursor: pointer;
         margin-bottom: 5px;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -341,6 +357,7 @@
         z-index: 1000;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
+
     &__item {
         padding-bottom: 6px;
         font-size: 14px;
@@ -348,6 +365,7 @@
         color: #6F6E6E;
         @include transform;
         cursor: pointer;
+
         &:hover {
             color: $main-Color;
         }
@@ -360,4 +378,23 @@
             padding-bottom: 11px;
         }
     }
+}
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+    .dropouts {
+        margin-top: 24px;
+
+        &__flex {
+            justify-content: space-between;
+        }
+    }
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .filter__title {
+        // display: none;
+    }
+
 }

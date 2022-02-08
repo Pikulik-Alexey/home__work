@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping cart page</title>
+    <title>Registration page</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,60 +108,38 @@
     <main class="main">
         <section class="benefits">
             <div class="wrap benefits__flex">
-                <h1 class="benefits__title">SHOPPING CART</h1>
+                <h1 class="benefits__title">REGISTRATION</h1>
             </div>
         </section>
-        <section class="basket">
-            <div class="wrap basket__flex">
-                <h2 class="visualy__hidden">Корзина с товарами</h2>
-                <section>
-                    <article class="ticket">
-                        <div class="ticket__img">
-                            <img src="img/card_three.jpg" width="262" height="306" alt="img">
-                        </div>
-                        <div class="ticket__text">
-                            <h3>MANGO PEOPLE <br> T-SHIRT</h3>
-                            <p>Price: <span class="ticket__text--decor">$300</span></p>
-                            <p>Color: Red</p>
-                            <p>Size: Xl </p>
-                            <p>Quantity: <input class="ticket__field" type="number"></p>
-                        </div>
-                        <button class="ticket__close"><i class="fas fa-times"></i></button>
-                    </article>
-                    <article class="ticket">
-                        <div class="ticket__img">
-                            <img src="img/card_seven.jpg" width="262" height="306" alt="img">
-                        </div>
-                        <div class="ticket__text">
-                            <h3>MANGO PEOPLE <br> T-SHIRT</h3>
-                            <p>Price: <span class="ticket__text--decor">$300</span></p>
-                            <p>Color: Red</p>
-                            <p>Size: Xl </p>
-                            <p>Quantity: <input class="ticket__field" type="number"> </p>
-                        </div>
-                        <button class="ticket__close"><i class="fas fa-times"></i></button>
-                    </article>
-                    <article class="ticket__btn">
-                        <button class="ticket__title">CLEAR SHOPPING CART</button>
-                        <a class="ticket__title" href="catalog.html">CONTINUE SHOPPING</a>
-                    </article>
+        <section class="application-form">
+            <div class="wrap application-form__flex">
+                <form class="communication" action="#">
+                    <h3 class="communication__title">Your Name</h3>
+                    <input class="communication__field" type="text" placeholder="First Name" required>
+                    <input class="communication__field" type="text" placeholder="Last Name" required>
+                    <fieldset class="communication__radio">
+                        <label><input type="radio" name="gender" value="male" required checked> Male </label>
+                        <label><input type="radio" name="gender" value="female" required> Female </label>
+                    </fieldset>
+                    <h3>Login details</h3>
+                    <input class="communication__field" type="email" placeholder="Email" required>
+                    <input class="communication__field" type="password" placeholder="Password" required>
+                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                        letters</p>
+                    <button class="communication__btn" type="submit">JOIN NOW <i class="fas decor fa-long-arrow-alt-right"></i></button>
+                </form>
+                <section class="privilege">
+                    <h3>LOYALTY HAS ITS PERKS</h3>
+                    <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                        these as soon as you join:</p>
+                    <ul class="privilege__list">
+                        <li class="privilege__item">15% off welcome offer</li>
+                        <li class="privilege__item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="privilege__item">$10 off a purchase on your birthday</li>
+                        <li class="privilege__item">Early access to products</li>
+                        <li class="privilege__item">Exclusive offers &amp;&nbsp;rewards</li>
+                    </ul>
                 </section>
-                <div class="regform-wrapper">
-                    <form class="regform" action="#">
-                        <p class="regform__title">SHIPPING ADRESS</p>
-                        <input class="regform__field" type="text" minlength="2" placeholder="Bangladesh">
-                        <input class="regform__field" type="text" placeholder="State">
-                        <input class="regform__field" type="text" placeholder="Postcode / Zip">
-                        <input class="regform__btn" type="submit" value="GET A QUOTE">
-                    </form>
-
-                    <section class="total-price">
-                        <h3>SUB TOTAL <span class="total-price--decoration">$900</span></h3>
-                        <p>GRAND TOTAL <span class="total-price--decor">$900</span></p>
-                        <div class="total-price__border"></div>
-                        <button class="total-price__btn">PROCEED TO CHECKOUT</button>
-                    </section>
-                </div>
             </div>
         </section>
     </main>

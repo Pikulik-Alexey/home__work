@@ -13,3 +13,20 @@
         color: $main-Color;
     }
 }
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+  
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .benefits__flex {
+        flex-direction: column;
+    }
+
+    .benefits__title {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+}

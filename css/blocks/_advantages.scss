@@ -47,3 +47,33 @@
         }
     }
 }
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+    .advantages__flex {
+        flex-direction: column;
+    }
+
+    .advantages__item {
+        padding-top: 108px;
+        background-position-y: 48px;
+
+        & p {
+            padding-bottom: 0px;
+        }
+
+        & .dec {
+            padding-bottom: 64px;
+        }
+    }
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .advantages__item {
+        
+        & .dec {
+            padding-bottom: 81px;
+        }
+    }
+}
