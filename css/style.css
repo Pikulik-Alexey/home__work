@@ -659,8 +659,8 @@ body {
           transform: scale(1);
 }
 
-.card__img {
-  padding-bottom: 25px;
+.card__text {
+  padding: 25px 25px 20px 18px;
 }
 
 .card__text--link {
@@ -668,7 +668,6 @@ body {
   line-height: 16px;
   color: #000000;
   text-decoration: none;
-  padding-left: 17px;
   -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
   transition: background-color 0.3s, color 0.3s, fill 0.3s;
 }
@@ -681,18 +680,14 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #5D5D5D;
-  padding-left: 16px;
   padding-top: 12px;
-  padding-bottom: 18px;
   max-width: 315px;
 }
 
-.card .price {
+.card__text .price {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
-  padding-left: 18px;
-  padding-bottom: 20px;
 }
 
 .card__overlay {

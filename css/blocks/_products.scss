@@ -94,33 +94,28 @@
         transform: scale(1);
     }
 
-    &__img {
-        padding-bottom: 25px;
-    }
+    &__text {
+        padding: 25px 25px 20px 18px;
 
-    &__text--link {
-        @include tiny(#000000);
-        text-decoration: none;
-        padding-left: 17px;
-        @include transform;
+        &--link {
+            @include tiny(#000000);
+            text-decoration: none;
+            @include transform;
 
-        &:hover {
-            color: $main-Color;
+            &:hover {
+                color: $main-Color;
+            }
         }
-    }
 
-    &__text p {
-        @include smallest(#5D5D5D);
-        padding-left: 16px;
-        padding-top: 12px;
-        padding-bottom: 18px;
-        max-width: 315px;
-    }
+        & p {
+            @include smallest(#5D5D5D);
+            padding-top: 12px;
+            max-width: 315px;
+        }
 
-    & .price {
-        @include medium($main-Color);
-        padding-left: 18px;
-        padding-bottom: 20px;
+        & .price {
+            @include medium($main-Color);
+        }
     }
 
     &__overlay {
