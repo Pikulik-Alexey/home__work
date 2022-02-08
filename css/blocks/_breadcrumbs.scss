@@ -33,3 +33,13 @@
         color: $main-Color;
     }
 }
+
+// планшет
+@media(max-width: $tablet-breakpoint) {}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .breadcrumbs {
+        margin-bottom: 46px;
+    }
+}

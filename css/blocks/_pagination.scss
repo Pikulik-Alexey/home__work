@@ -38,9 +38,22 @@
     &__item--separator {
         margin: 0 -10px;
         color: #EBEBEB;
+
         &:hover {
             cursor: pointer;
             color: $main-Color;
-        }  
+        }
     }
 }
+
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+    .pagination {
+        padding-top: 40px;
+        padding-bottom: 63px;
+    }
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {}
