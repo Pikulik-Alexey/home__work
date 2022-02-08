@@ -48,6 +48,7 @@
 
     &__sales {
         @include medium(#FFFFFF);
+        z-index: 10;
     }
 
     &__name {
@@ -55,6 +56,7 @@
         font-size: $font-size;
         line-height: $font-size + 4;
         color: $main-Color;
+        z-index: 10;
     }
 }
 

@@ -457,6 +457,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  z-index: 10;
 }
 
 .categories__name {
@@ -464,6 +465,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #F16D7F;
+  z-index: 10;
 }
 
 @media (max-width: 788px) {
@@ -904,10 +906,15 @@ body {
   color: #222224;
   text-align: center;
   max-width: 360px;
+  z-index: 10;
 }
 
 .feedback__text--italic {
   font-style: italic;
+}
+
+.feedback__right {
+  z-index: 100;
 }
 
 .feedback__right h3 {
@@ -2379,9 +2386,9 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 128px;
 }
 
@@ -2393,6 +2400,8 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 64px;
+  margin-bottom: 96px;
 }
 
 .communication h3 {
@@ -2400,10 +2409,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-}
-
-.communication__title {
-  margin-top: 64px;
 }
 
 .communication p {
@@ -2450,9 +2455,24 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .communication__radio {
+  font-size: 11px;
+  line-height: 13px;
+  color: #222222;
   border: none;
   margin-top: 31px;
   margin-bottom: 33px;
+}
+
+.communication__radio .test {
+  margin-right: 20px;
+}
+
+.communication__radio .test:last-child {
+  margin-right: 0px;
+}
+
+.communication__radio .testing {
+  margin-right: 10px;
 }
 
 .communication__btn {
@@ -2463,7 +2483,6 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFFFFF;
   width: 167px;
   padding: 16px 29px;
-  margin-bottom: 96px;
   cursor: pointer;
   -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
   transition: background-color 0.3s, color 0.3s, fill 0.3s;
@@ -2482,6 +2501,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-top: 64px;
 }
 
 .privilege h3 {
@@ -2489,7 +2509,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 24px;
   line-height: 29px;
   color: #000000;
-  margin-top: 64px;
 }
 
 .privilege p {
@@ -2511,8 +2530,57 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .privilege__item {
-  background-image: url(../img/privilege__icon.svg);
-  background-repeat: no-repeat;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.privilege__item:last-child {
+  padding-bottom: 0px;
+}
+
+.privilege__item::before {
+  content: "\2713";
+  margin-right: 23px;
+}
+
+@media (max-width: 788px) {
+  .application-form__flex {
+    gap: 22px;
+  }
+  .communication {
+    margin-top: 40px;
+  }
+  .privilege {
+    margin-top: 40px;
+  }
+  .privilege h3 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .privilege p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .privilege__list {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 415px) {
+  .application-form__flex {
+    display: block;
+  }
+  .communication {
+    margin-bottom: 40px;
+  }
+  .privilege {
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
