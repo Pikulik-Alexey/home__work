@@ -154,10 +154,18 @@
 
     .communication {
         margin-bottom: 40px;
+        align-items: center;
     }
 
     .privilege {
         margin-top: 0px;
         margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .communication__btn {
+        align-self: flex-start;
     }
 }
