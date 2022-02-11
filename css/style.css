@@ -2402,8 +2402,6 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration: none;
   -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
   transition: background-color 0.3s, color 0.3s, fill 0.3s;
-  -webkit-transform: 0.3s;
-          transform: 0.3s;
 }
 
 .network__link:hover {

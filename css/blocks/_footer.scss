@@ -30,7 +30,6 @@
         background-color: #FFFFFF;
         text-decoration: none;
         @include transform;
-        transform: 0.3s;
 
         &:hover {
             background-color: $main-Color;
