@@ -15,6 +15,11 @@
     gap: 23px;
 }
 
+.unfolding {
+    display: flex;
+    gap: 23px;
+}
+
 .fashionable {
     position: relative;
     width: 132px;
@@ -393,8 +398,61 @@
 
 // мобильный
 @media(max-width: $mobile-breakpoint) {
-    .filter__title {
-        // display: none;
+
+    .filter {
+        width: 0px;
+
+        &__title {
+            font-size: 0px;
+            padding: 0px;
+
+            & svg {
+                margin-left: 0px;
+                width: 37px;
+                height: 25px;
+            }
+        }
     }
 
+    .dropouts__flex {
+        gap: 0px;
+    }
+
+    .fashionable {
+        width: 111px;
+    }
+
+    .parameter {
+        width: 40px;
+    }
+
+    .cost {
+        width: 50px;
+    }
+
+    .fashionable__title,
+    .parameter__title,
+    .cost__title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .color__title,
+    .cize__title,
+    .quantity__title {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .color {
+        width: 98px;
+    }
+
+    .cize {
+        width: 85px;
+    }
+
+    .quantity {
+        width: 71px;
+    }
 }

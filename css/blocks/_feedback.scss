@@ -1,21 +1,11 @@
 .feedback {
     background-color: #D73C3C;
-    background-image: url(../img/fon_feedback.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(to top, rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/fon_feedback.jpg) no-repeat;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 155px;
     background-position: left bottom;
     position: relative;
-
-    &__overlay {
-        position: absolute;
-        background-color: rgba(244, 244, 244, 0.7);
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-    }
 
     &__flex {
         @include flex-center(center, space-between);
@@ -31,25 +21,30 @@
         @include big(#222224);
         text-align: center;
         max-width: 360px;
+        z-index: 10;
 
         &--italic {
             font-style: italic;
         }
     }
 
-    &__right h3 {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 40px;
-        text-align: center;
-        color: #222224
-    }
+    &__right {
+        z-index: 100;
 
-    &__right--small {
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        color: #222224;
+        & h3 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            color: #222224;
+        }
+
+        &--small {
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #222224;
+        }
     }
 
     &__unification {
@@ -64,6 +59,7 @@
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         outline: none;
+        cursor: pointer;
 
         &::placeholder {
             @include smallest(#222224);

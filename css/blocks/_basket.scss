@@ -1,7 +1,11 @@
+.basket {
+    margin-top: 96px;
 
-.basket__flex {
-    @include flex-center(center, space-between);
+    &__flex {
+        @include flex-center(center, space-between);
+    }
 }
+
 
 //  карточки
 .ticket {
@@ -11,7 +15,6 @@
 
     &:first-child {
         margin-bottom: 40px;
-        margin-top: 96px;
     }
 
     & img {
@@ -69,8 +72,7 @@
     }
 
     &__btn {
-        @include flex-center(center, flex-start);
-        gap: 193px;
+        @include flex-center(center, space-between);
         margin-top: 72px;
         margin-bottom: 128px;
     }
@@ -82,6 +84,7 @@
         font-size: 14px;
         line-height: 17px;
         color: #000000;
+        text-transform: uppercase;
         cursor: pointer;
         text-decoration: none;
         @include transform;
@@ -125,7 +128,6 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     width: 360px;
-    margin-top: 113px;
 
     &__title {
         font-weight: 300;
@@ -199,7 +201,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &__border {
-        border: 1px solid  #E2E2E2;
+        border: 1px solid #E2E2E2;
         margin-bottom: 17px;
     }
 
@@ -215,8 +217,105 @@ input[type=number]::-webkit-outer-spin-button {
         @include transform;
 
         &:hover {
-        color: $main-Color;
-        background-color: #000000;
+            color: $main-Color;
+            background-color: #000000;
         }
+    }
+}
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+
+    .basket {
+        margin-top: 59px;
+
+        &__flex {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .ticket__btn {
+        justify-content: center;
+        gap: 49px;
+        margin-top: 62px;
+        margin-bottom: 64px;
+    }
+
+
+    .regform-wrapper {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 128px;
+    }
+
+    .regform {
+        margin-top: 0px;
+    }
+
+    .total-price {
+        margin-top: 39px;
+    }
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .basket {
+        margin-top: 39px;
+    }
+
+    .ticket__img {
+        & img {
+            width: 143px;
+            height: 188px;
+        }
+    }
+
+    .ticket__text {
+        padding: 15px;
+        width: 214px;
+
+        & h3 {
+            @include medium(#222222);
+            padding-bottom: 25px;
+        }
+
+        & p {
+            @include smallest(#575757);
+
+            &:not(:last-child) {
+                padding-bottom: 4px;
+            }
+        }
+
+        &--decor {
+            color: $main-Color;
+        }
+    }
+
+    .ticket:first-child {
+        margin-bottom: 32px;
+    }
+
+    .ticket__btn {
+        gap: 9px;
+        margin-top: 30px;
+        margin-bottom: 48px;
+    }
+
+    .ticket__title {
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: none;
+    }
+
+    .ticket__close {
+        font-size: 17px;
+    }
+
+    .regform-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 96px;
+        justify-content: center;
     }
 }

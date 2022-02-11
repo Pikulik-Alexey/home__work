@@ -4,6 +4,7 @@
         background-color: #FFFFFF;
         @include flex-center(center, center);
         flex-direction: column;
+        border: 1px solid #EAEAEA;
     }
 
     &__text {
@@ -19,7 +20,7 @@
 
         & h3 {
             font-weight: 300;
-            font-size: $font-size - 4;
+            font-size: 18px;
             line-height: $font-size - 2;
             color: #4D4D4D;
             padding-top: 12px;
@@ -29,7 +30,7 @@
         & p {
             @include smallest(#5E5E5E);
             text-align: center;
-            max-width: 555px;
+            width: 555px;
             padding-bottom: 32px;
         }
 
@@ -63,6 +64,7 @@
         cursor: pointer;
         @include flex-center(center, center);
         @include transform;
+        margin-bottom: 65px;
         & svg {
             margin-right: 23px;
             vertical-align: middle;
@@ -81,4 +83,20 @@
             border: 1px solid red;
         }
     }
+}
+
+// планшет
+@media(max-width: $tablet-breakpoint) {
+   
+}
+
+// мобильный
+@media(max-width: $mobile-breakpoint) {
+    .description__text p {
+        width: 326px;
+    }
+    .description__streak {
+        width: 174px;
+    }
+
 }
