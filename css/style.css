@@ -2039,6 +2039,7 @@ body {
   margin-left: 24px;
   padding: 1px 10px;
   color: #656565;
+  cursor: pointer;
 }
 
 .ticket__text {
