@@ -8,6 +8,7 @@
     &__item {
         max-width: 360px;
         padding-top: 163px;
+        overflow-wrap: break-word;
 
         &--delivery {
             background-image: url(../img/delivery.svg);

@@ -11,6 +11,7 @@
         font-size: $font-size;
         line-height: $font-size + 5;
         color: $main-Color;
+        text-transform: uppercase;
     }
 
     &__caption {
@@ -19,6 +20,7 @@
         font-size: $font-size;
         line-height: $font-size + 5;
         color: $main-Color;
+        text-transform: uppercase;
     }
 }
 

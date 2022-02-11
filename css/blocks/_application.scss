@@ -22,9 +22,14 @@
     }
 
     &__field {
-        width: 360px;
+        max-width: 360px;
         padding: 12px 16px 15px 16px;
         margin-top: 21px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $main-Color;
+        }
 
         &::placeholder {
             font-weight: 300;
@@ -42,6 +47,7 @@
 
         & .test {
             margin-right: 20px;
+            cursor: pointer;
 
             &:last-child {
                 margin-right: 0px;
@@ -57,6 +63,7 @@
         background-color: $main-Color;
         border: none;
         @include smallest(#FFFFFF);
+        text-transform: uppercase;
         width: 167px;
         padding: 16px 29px;
         cursor: pointer;
@@ -83,6 +90,7 @@
         font-size: 24px;
         line-height: 29px;
         color: #000000;
+        text-transform: uppercase;
     }
 
     & p {

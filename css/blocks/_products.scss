@@ -43,7 +43,7 @@
             border: 1px solid #FF6A6A;
             color: #FFFFFF;
             // transform: rotate(1080deg);
-            animation: rotate-scale-up 0.65s linear 3 both;
+            animation: rotate-scale-up 0.65s linear 1 both;
 
             @keyframes rotate-scale-up {
                 0% {
@@ -51,7 +51,7 @@
                 }
 
                 50% {
-                    transform: scale(2) rotateZ(180deg);
+                    transform: scale(0.5) rotateZ(180deg);
                 }
 
                 100% {
@@ -89,18 +89,20 @@
     background-color: #F8F8F8;
     position: relative;
     overflow: hidden;
-
+    
     &:hover .card__overlay {
         transform: scale(1);
     }
 
     &__text {
         padding: 25px 25px 20px 18px;
+        overflow-wrap: break-word;
 
         &--link {
             @include tiny(#000000);
             text-decoration: none;
             @include transform;
+            text-transform: uppercase;
 
             &:hover {
                 color: $main-Color;

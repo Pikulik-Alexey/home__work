@@ -21,7 +21,6 @@
         @include big(#222224);
         text-align: center;
         max-width: 360px;
-        z-index: 10;
 
         &--italic {
             font-style: italic;
@@ -37,6 +36,7 @@
             line-height: 40px;
             text-align: center;
             color: #222224;
+            text-transform: uppercase;
         }
 
         &--small {
@@ -60,6 +60,10 @@
         border-bottom-left-radius: 20px;
         outline: none;
         cursor: pointer;
+
+        &:hover {
+            background-color: gray;
+        }
 
         &::placeholder {
             @include smallest(#222224);

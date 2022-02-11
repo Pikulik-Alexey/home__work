@@ -21,6 +21,7 @@
         font-weight: 300;
         @include smallest(#636363);
         @include transform;
+        text-transform: uppercase;
     }
 
     &__link--current {

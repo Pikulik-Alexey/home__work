@@ -10,12 +10,15 @@
     &__text {
         @include flex-center(center, center);
         flex-direction: column;
+        max-width: 555px;
+        padding: 0 20px;
 
         & h2 {
             font-weight: 300;
             @include smallest($main-Color);
             padding-top: 64px;
             padding-bottom: 12px;
+            text-transform: uppercase;
         }
 
         & h3 {
@@ -25,12 +28,13 @@
             color: #4D4D4D;
             padding-top: 12px;
             padding-bottom: 48px;
+            text-transform: uppercase;
         }
 
         & p {
             @include smallest(#5E5E5E);
             text-align: center;
-            width: 555px;
+            
             padding-bottom: 32px;
         }
 
@@ -93,7 +97,7 @@
 // мобильный
 @media(max-width: $mobile-breakpoint) {
     .description__text p {
-        width: 326px;
+        max-width: 326px;
     }
     .description__streak {
         width: 174px;
